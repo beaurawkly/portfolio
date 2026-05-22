@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://beaurawkly.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
@@ -39,5 +40,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://github.com/beaurawkly/portfolio.git"
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
