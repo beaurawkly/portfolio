@@ -258,6 +258,7 @@ li {
 	position: sticky;
 	position: -webkit-sticky; /* Safari */
 	top: 4rem;
+	background-color: var(--bkg);
 }
 .projectdescription p {
 	margin-top: 0;
@@ -314,7 +315,7 @@ li {
 /*	background-color: rgba(80, 174, 8, 1.0);*/
 	width: 1rem;
 /*	height: 1rem;*/
-	content: url(../public/return-icon.svg);
+	content: url(../../public/return-icon.svg);
 	display: inline-block;
 }
 .returnbutton:hover {

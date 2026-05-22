@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../logo.svg';
 
 const menuItems = [
-  { label: 'All Work', href: 'index.html' },
-  { label: 'About', href: 'about.html' },
+  { label: 'All Work', to: '/' },
+  { label: 'About', to: '/about' },
 ];
 
 export default function MenuBar() {
@@ -11,18 +12,18 @@ export default function MenuBar() {
     <div id="menubar">
       <div id="menu" className="maxcontainerwidth">
         <div className="mainlogo">
-          <a href="index.html">
+          <Link to="/">
             <img src={logo} alt="reeding logo" />
-          </a>
-          <a href="index.html">
+          </Link>
+          <Link to="/">
             <p>Reeding</p>
-          </a>
+          </Link>
         </div>
 
         <ul>
           {menuItems.map((item) => (
-            <li key={item.href}>
-              <a href={item.href}>{item.label}</a>
+            <li key={item.to}>
+              <Link to={item.to}>{item.label}</Link>
             </li>
           ))}
         </ul>

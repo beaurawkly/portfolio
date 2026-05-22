@@ -1,4 +1,4 @@
-// src/projects/playingcards.js
+// src/projects/ui.js
 import React from 'react';
 import '../styles/reset.css';
 import '../styles/App.css';
@@ -26,13 +26,13 @@ import img3_1000 from '../images/iaedplayingcards-image-03-1000.webp';
 import img3_1400 from '../images/iaedplayingcards-image-03-1400.webp';
 import img3_1600 from '../images/iaedplayingcards-image-03-1600.webp';
 
-export default function Video() {
+export default function PlayingCards() {
   return (
     <div className="maxcontainerwidth">
       <div className="project">
         <div className="projectdescription">
-          <h1 id="projectTitle">Playing Cards</h1>
-          <p>I was commissioned to create an engaging playing card design that embodies the visual language and brand of the International Academies of Emergency Dispatch (IAED) while listing all of their products and services. To achieve this, I incorporated symbols representing the four disciplines of emergency dispatching (medical, fire, police, nurse triage) inside the four suits. This design allows the cards to be played as standard playing cards. The face cards were designed to feature different dispatchers.</p>
+          <h1 id="projectTitle">User Interface Projects</h1>
+          <p>I have been part of various projects to design different websites from B2B marketing site to non-profit accreditation sites to publication site. I have been the only designer on these project working under of the creative director. Some of the projects required just simple updates to full brand standards along with the site project.</p>
           <p id="software">Software</p>
           <ul>
             <li>Illustrator</li>
@@ -46,7 +46,7 @@ export default function Video() {
               srcSet={`${img1_400} 400w, ${img1_600} 600w, ${img1_800} 800w, ${img1_1000} 1000w, ${img1_1400} 1400w, ${img1_1600} 1600w`}
               src={img1_1600}
               className="projectdetailimg boximghov"
-              alt="Playing cards 1"
+              alt="User Interface Project 1"
             />
 
             <img
@@ -54,7 +54,7 @@ export default function Video() {
               srcSet={`${img2_400} 400w, ${img2_600} 600w, ${img2_800} 800w, ${img2_1000} 1000w, ${img2_1400} 1400w, ${img2_1600} 1600w`}
               src={img2_1600}
               className="projectdetailimg boximghov"
-              alt="Playing cards 2"
+              alt="User Interface Project 2"
             />
 
             <img
@@ -62,7 +62,7 @@ export default function Video() {
               srcSet={`${img3_400} 400w, ${img3_600} 600w, ${img3_800} 800w, ${img3_1000} 1000w, ${img3_1400} 1400w, ${img3_1600} 1600w`}
               src={img3_1600}
               className="projectdetailimg boximghov"
-              alt="Playing cards 3"
+              alt="User Interface Project 3"
             />
           </div>
       </div>

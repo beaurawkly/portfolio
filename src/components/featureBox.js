@@ -6,18 +6,19 @@ export default function SmallBox({ title, href, to, linkLabel, imageSrc, altText
   const linkProps = to ? { to } : { href };
 
   return (
-    <div className="box boxhover colbox boximghov">
+    <div className="featurebox boxhover">
       <LinkComponent aria-label={linkLabel} {...linkProps}>
-        <img
-          aria-label={altText}
-          src={imageSrc}
-          className="featureimages"
-          alt={altText}
-        />
-        <div className="content">
-          <h5>{title}</h5>
-        </div>
+        <h2>{title}</h2>
+            <img
+                aria-label={altText}
+                src={imageSrc}
+                className="featureimages"
+                alt={altText}
+            />
       </LinkComponent>
     </div>
   );
 }
+
+
+

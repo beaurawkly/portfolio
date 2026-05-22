@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const footerLinks = [
-  { label: 'Portfolio', href: 'index.html' },
-  { label: 'About', href: 'about.html' },
+  { label: 'Portfolio', to: '/' },
+  { label: 'About', to: '/about' },
 ];
 
 export default function Footer() {
@@ -10,9 +11,9 @@ export default function Footer() {
     <div id="footer" className="maxcontainerwidth">
       <p className="footerlinks">
         {footerLinks.map((item) => (
-          <a key={item.href} href={item.href}>
+          <Link key={item.to} to={item.to}>
             {item.label}
-          </a>
+          </Link>
         ))}
       </p>
       <p>
